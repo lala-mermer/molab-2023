@@ -2,5 +2,10 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/merowens/Desktop/molab%20class/molab-2023/Week%202/Playground_2.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=1157&amp;EndingColumnNumber=0&amp;EndingLineNumber=35&amp;StartingColumnNumber=1&amp;StartingLineNumber=34&amp;Timestamp=717000216.030892"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
