@@ -52,6 +52,7 @@ struct PlayerView: View {
     var body: some View {
         VStack {
             Text("\n")
+//            Image("fred")
             Text(song.title)
                 .font(.title)
                 .fontWeight(.bold)
@@ -59,7 +60,7 @@ struct PlayerView: View {
             Image(song.imageName)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding(.all)
+//                            .padding(.all)
             
             Button(action: {
                 if isPlaying {
@@ -120,7 +121,7 @@ struct PlayerView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewInterfaceOrientation(.portraitUpsideDown)
+            .previewInterfaceOrientation(.portrait)
     }
 
     
