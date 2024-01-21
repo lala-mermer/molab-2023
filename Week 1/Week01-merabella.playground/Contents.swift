@@ -1,42 +1,36 @@
-var emojiDict: [String: String] = ["dk":"▓▓", "md":"▒▒", "lt":"░░", "sp":"  "]
+import UIKit
 
-var smiley: [[String]] = [
-    ["sp","lt","lt","lt","lt","lt","lt","lt","sp"],
-    ["lt","lt","lt","lt","lt","lt","lt","lt","lt"],
-    ["lt","lt","dk","lt","lt","lt","dk","lt","lt"],
-    ["lt","lt","dk","lt","lt","lt","dk","lt","lt"],
-    ["lt","lt","lt","lt","lt","lt","lt","lt","lt"],
-    ["lt","lt","lt","lt","lt","lt","lt","lt","lt"],
-    ["lt","lt","dk","lt","lt","lt","dk","lt","lt"],
-    ["lt","lt","lt","dk","dk","dk","lt","lt","lt"],
-    ["sp","lt","lt","lt","lt","lt","lt","lt","sp"],
-]
+var greeting = "Hello, playground"
 
-var pattern: [[String]] = [
-    ["dk","md","lt","dk","lt","md","dk"],
-    ["lt","dk","md","lt","md","dk","lt"],
-    ["dk","md","lt","dk","lt","md","dk"],
-    ["lt","dk","md","lt","md","dk","lt"],
-    ["dk","md","lt","dk","lt","md","dk"],
-    ["lt","dk","md","lt","md","dk","lt"],
-    ["dk","md","lt","dk","lt","md","dk"],
-]
+var ears = "───▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄───"
+var face = "───█▒▒░░░░░░░░░▒▒█───"
+var eyes = "────█░░█░░░░░█░░█───"
+var nose = "─▄▄──█░░░▀█▀░░░█──▄▄─"
 
-func renderPic(picture: [[String]]) {
-    for row in picture {
-        var curRow = ""
-        for cell in row{
-            if let pix = emojiDict[cell]{
-                curRow += pix
-            } else {
-                print("ERROR")
-            }
-        }
-        print(curRow)
-    }
+func printEars() -> String{
+    return ears
 }
 
-print("Smiley Face!\nConsists of \(smiley.count * smiley[0].count) cells")
-renderPic(picture: smiley)
-print("\n\nFun Pattern!\nConsists of \(pattern.count * pattern[0].count) cells")
-renderPic(picture: pattern)
+func printFace() -> String{
+    return face
+}
+
+func printEyes() -> String{
+    return eyes
+}
+
+func printNose() -> String{
+    return nose
+}
+
+
+//for _ in 1...3{
+//    print(printEars() + printSpace() + printEars() + printSpace() + printEars())
+//    print(printFace() + printSpace() + printFace() + printSpace() + printFace())
+//    print(printBottom() + printSmallSpace() + printBottom() + printSmallSpace() + printBottom())
+//    print("")
+//}
+printEars()
+printFace()
+printEyes()
+printNose()
