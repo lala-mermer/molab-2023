@@ -1,94 +1,181 @@
-var greeting = "Hello, playground"
-print (greeting)
-var myVariable = 42
-myVariable = 50
-let myConstant = 42
-print ("1+2")
-
-//variables
-var name = "Ted"
-let character = "Daphne"
-var playerName = "Roy"
-print(playerName)
-
-playerName = "Dani"
-print(playerName)
-
-playerName = "Sam"
-print(playerName)
-
-let managerName = "Michael Scott"
-let dogBreed = "Samoyed"
-let meaningOfLife = "How many roads must a man walk down?"
-
-//strings
-let actor = "Denzel Washington"
 let filename = "paris.jpg"
-let result = "⭐️ You win! ⭐️"
-let quote = "Then he tapped a sign saying \"Believe\" and walked away."
-let movie = """
-A day in
-the life of an
-Apple engineer
-"""
-
-print(movie)
-
-print(actor.count)
-
-let nameLength = actor.count
-print(nameLength)
-
-print(result.uppercased())
-
-print(movie.hasPrefix("A day"))
-
 print(filename.hasSuffix(".jpg"))
-
-//integers
-let score = 10
-let reallyBig = 100000000
-let lowerScore = score - 2
-let higherScore = score + 10
-let doubledScore = score * 2
-let squaredScore = score * score
-let halvedScore = score / 2
-print(score)
-
-var counter = 10
-counter = counter + 5
-counter += 5
-print(counter)
-counter *= 2
-print(counter)
-counter -= 10
-print(counter)
-counter /= 2
-print(counter)
 
 let number = 120
 print(number.isMultiple(of: 3))
-print(120.isMultiple(of: 3))
 
-//decimal numbers, floating-point numbers
-let number1 = 0.1 + 0.2 //double-precision floating-point number
-print(number1)
+let goodDogs = true
+let gameOver = false
+let isMultiple = 120.isMultiple(of: 3)
 
-let a = 1 //int
-let b = 2.0 //double
-//could do let c = a + Int(b) OR
-let c = Double(a) + b
+var isAuthenticated = false
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
 
-let double1 = 3.1
-let double2 = 3131.3131
-let double3 = 3.0
-let int1 = 3
+var gameOver1 = false
+print(gameOver1)
 
-var name1 = "Nicolas Cage"
-name1 = "John Travolta"
-//name1 = 57 is not allowed since it is not a string
+gameOver1.toggle() //same as using ! marks
+print(gameOver1)
 
-var rating = 5.0
-rating *= 2
+//join strings
+let firstPart = "Hello, "
+let secondPart = "world!"
+let greeting = firstPart + secondPart
 
-//: [Next](@next)
+let people = "Haters"
+let action = "hate"
+let lyric = people + " gonna " + action
+print(lyric)
+
+let luggageCode = "1" + "2" + "3" + "4" + "5"
+
+let quote = "Then he tapped a sign saying \"Believe\" and walked away."
+
+let name = "Taylor"
+let age = 26
+let message = "Hello, my name is \(name) and I'm \(age) years old."
+print(message)
+
+let number1 = 11
+//this is not allowed: let missionMessage = "Apollo " + number1 + " landed on the moon."
+let missionMessage = "Apollo " + String(number1) + " landed on the moon."
+//let missionMessage = "Apollo \(number1) landed on the moon."
+
+print("5 x 5 is \(5 * 5)")
+
+var beatles = ["John", "Paul", "George", "Ringo"]
+let numbers = [4, 8, 15, 16, 23, 42]
+var temperatures = [25.3, 28.2, 26.4]
+print(beatles[0])
+print(numbers[1])
+print(temperatures[2])
+
+beatles.append("Adrian")
+beatles.append("Allen")
+beatles.append("Adrian")
+beatles.append("Novall")
+beatles.append("Vivian")
+//temperatures.append("Chris") is not allowed, cannot put strings into decimal numbers
+let firstBeatle = beatles[0]
+let firstNumber = numbers[0]
+//let notAllowed = firstBeatle + firstNumber
+
+var scores = Array<Int>() //this is an array only hold integers
+scores.append(100)
+scores.append(80)
+scores.append(85)
+print(scores[1])
+
+var albums = Array<String>()
+albums.append("Folklore")
+albums.append("Fearless")
+albums.append("Red")
+/*
+var albums = [String]() //same as the previous array
+albums.append("Folklore")
+albums.append("Fearless")
+albums.append("Red")
+var albums = ["Folklore"] //swift will understand this
+albums.append("Fearless")
+albums.append("Red")
+*/
+print(albums.count)
+
+var characters = ["Lana", "Pam", "Ray", "Sterling"]
+print(characters.count)
+
+characters.remove(at: 2) //remove "Ray"
+print(characters.count)
+
+characters.removeAll()
+print(characters.count)
+
+let bondMovies = ["Casino Royale", "Spectre", "No Time To Die"]
+print(bondMovies.contains("Frozen")) //use this to check
+
+let cities = ["London", "Tokyo", "Rome", "Budapest"]
+print(cities.sorted()) //Alphabetical order
+
+let presidents = ["Bush", "Obama", "Trump", "Biden"]
+let reversedPresidents = presidents.reversed()
+print(reversedPresidents) //swift tells you it is reversed but not gonna show it hehe
+
+
+//dictionaries
+var employee = ["Taylor Swift", "Singer", "Nashville"]
+print("Name: \(employee[0])")
+print("Job title: \(employee[1])")
+print("Location: \(employee[2])")
+print("Name: \(employee[0])")
+employee.remove(at: 1)
+//print("Job title: \(employee[1])")
+//print("Location: \(employee[2])")
+
+//let employee2 = ["name": "Taylor Swift", "job": "Singer", "location": "Nashville"]
+let employee2 = [
+    "name": "Taylor Swift",
+    "job": "Singer",
+    "location": "Nashville"
+]
+/*
+print(employee2["name"])
+print(employee2["job"])
+print(employee2["location"])
+print(employee2["password"])
+print(employee2["status"])
+print(employee2["manager"])
+*/
+print(employee2["name", default: "Unknown"])
+print(employee2["job", default: "Unknown"])
+print(employee2["location", default: "Unknown"])
+
+
+let hasGraduated = [
+    "Eric": false,
+    "Maeve": true,
+    "Otis": false,
+]
+
+let olympics = [
+    2012: "London",
+    2016: "Rio de Janeiro",
+    2021: "Tokyo"
+]
+
+print(olympics[2012, default: "Unknown"])
+
+var heights = [String: Int]() //strings as keys and integers as values
+heights["Yao Ming"] = 229
+heights["Shaquille O'Neal"] = 216
+heights["LeBron James"] = 206
+
+var archEnemies = [String: String]()
+archEnemies["Batman"] = "The Joker"
+archEnemies["Superman"] = "Lex Luthor"
+archEnemies["Batman"] = "Penguin" //overwrite
+
+
+
+var selected = "Monday"
+selected = "Tuesday"
+selected = "January"
+selected = "Friday " //an extra space
+
+enum Weekday {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+}
+
+enum Weekday1 {
+    case monday, tuesday, wednesday, thursday, friday
+} //this is an easier way to write
+
+var day = Weekday.monday
+day = .tuesday
+day = .friday
