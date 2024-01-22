@@ -5,5 +5,6 @@
         <page name='Apple Tutorial'/>
         <page name='Gradient Testing'/>
         <page name='Local Image Render'/>
+        <page name='URL Image Render'/>
     </pages>
 </playground>
