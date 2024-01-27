@@ -1,5 +1,5 @@
 //: [Previous](@previous)
-//: [Next](@next)
+//: [NextI](@next)
 
 import Foundation
 import UIKit
@@ -34,19 +34,3 @@ let image = renderer.image { (context) in
 
 image
 
-
-
-
-//let image = UIImage(systemName: "rectangle.fill")!
-let image = UIImage(systemName: "rectangle")!
-
-let data = image.pngData()
-
-let folder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
-// Output path for the file in the Documents folder
-let filePath = folder!.appendingPathComponent("symbol1.png");
-
-let err: ()? = try? data?.write(to: filePath)
-print("err \(String(describing: err))\nfilePath \(filePath.absoluteString.dropFirst(7))")
-// Terminal command string to copy output file to Downloads folder
-print("cp \(filePath.absoluteString.dropFirst(7)) ~/Downloads/symbol1.png" )

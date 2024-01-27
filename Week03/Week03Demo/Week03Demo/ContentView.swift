@@ -13,9 +13,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ImageGeneratorView(rectangles: $rectangles)
-                .frame(width: 200, height: 200)
-                .border(Color.black, width: 1)
-            
+                .frame(width: 220, height: 220)
+                .border(Color.black, width: 3)
+            //can't add corner radius
             Button(action: generateRandomImage) {
                 Text("Generate Random Image")
                     .padding()
@@ -28,8 +28,8 @@ struct ContentView: View {
     
     func generateRandomImage() {
         rectangles = (0..<4).map { _ in
-            RectangleData(x: CGFloat.random(in: 0...200),
-                           y: CGFloat.random(in: 0...200),
+            RectangleData(x: CGFloat.random(in: 20...190),
+                           y: CGFloat.random(in: 20...190),
                            width: CGFloat.random(in: 10...50),
                            height: CGFloat.random(in: 10...50),
                            color: Color.random())

@@ -24,12 +24,8 @@ func printNose() -> String{
 }
 
 
-//for _ in 1...3{
-//    print(printEars() + printSpace() + printEars() + printSpace() + printEars())
-//    print(printFace() + printSpace() + printFace() + printSpace() + printFace())
-//    print(printBottom() + printSmallSpace() + printBottom() + printSmallSpace() + printBottom())
-//    print("")
-//}
+
+//print (printEars() \n + printFace())
 printEars()
 printFace()
 printEyes()
