@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     // Time remaining in seconds. The source of truth.
-    @State var timeRemaining = 40
+    @State var timeRemaining = 30
     
     // Flag for timer state.
     @State var timerIsRunning = false
@@ -17,14 +17,14 @@ struct ContentView: View {
     // Timer gets called every second.
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    let timerTypes = ["Wash", "Dry"]
-    @State private var timerType = "Wash"
+    let timerTypes = ["Plank", "Crunch"]
+    @State private var timerType = "Plank"
     @State private var showingAlert = false
 
     
     var timeVal:Int {
-        if(timerType == "Wash"){
-            return 40
+        if(timerType == "Plank"){
+            return 30
         } else {
             return 60
         }
@@ -33,9 +33,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                // TimeDisplay view with data bindings.
-                // NOTE: Syntax used for data bindings.
-                Text("Select Cycle")
+                Text("Select Exercise")
                     .foregroundColor(Color.gray)
                     .multilineTextAlignment(.leading)
                 Picker("Timer", selection: $timerType){
@@ -65,8 +63,8 @@ struct ContentView: View {
                         self.timeRemaining = timeVal
                     }
                 }) {
-                    // Start / Stop Button
-                    Text(timerIsRunning ? "Reset" : "Start")
+                    // Start / Restart Button
+                    Text(timerIsRunning ? "Restart" : "Start")
                         .font(.system(size: 30, weight: .bold))
                         .frame(width: 300, height: 60)
                         .background(Color.green)
@@ -77,7 +75,6 @@ struct ContentView: View {
             }
             
             .onReceive(timer) { _ in
-                // Block gets called when timer updates.
                 
                 // If timeRemaining and timer is running, count down.
                 if self.timeRemaining == 0{
@@ -92,13 +89,13 @@ struct ContentView: View {
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             .background(Color.white)
             .edgesIgnoringSafeArea(.all)
-            .alert("Timer is done!", isPresented: $showingAlert) {
+            .alert("This set is done!", isPresented: $showingAlert) {
                 Button("OK", role: .cancel) {
                     timeRemaining = timeVal
                     self.timerIsRunning.toggle()
                 }
             }
-            .navigationTitle("Laundry Timer")
+            .navigationTitle("Workout Timer")
         }
     }
 }
