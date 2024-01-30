@@ -2,8 +2,7 @@
 //  ContentView.swift
 //  NavigationApp
 //
-//  Created by itpstudent on 10/11/23.
-//  Copyright © 2023 itpstudent. All rights reserved.
+//  Created by Mer Owens on 01/24/24.
 //
 
 import SwiftUI
