@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var rectangles: [RectangleData] = []
+    @State private var rectangles: [CircleData] = []
 
     var body: some View {
         VStack {
@@ -17,7 +17,8 @@ struct ContentView: View {
                 .border(Color.black, width: 3)
             //can't add corner radius
             Button(action: generateRandomImage) {
-                Text("Generate Random Image")
+                Text("Generate Random Circles")
+                    .bold()
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(Color.white)
@@ -28,22 +29,22 @@ struct ContentView: View {
     
     func generateRandomImage() {
         rectangles = (0..<4).map { _ in
-            RectangleData(x: CGFloat.random(in: 20...190),
-                           y: CGFloat.random(in: 20...190),
-                           width: CGFloat.random(in: 10...50),
-                           height: CGFloat.random(in: 10...50),
+            CircleData(x: CGFloat.random(in: 30...180),
+                           y: CGFloat.random(in: 30...180),
+                           width: CGFloat.random(in: 10...60),
+                           height: CGFloat.random(in: 10...60),
                            color: Color.random())
         }
     }
 }
 
 struct ImageGeneratorView: View {
-    @Binding var rectangles: [RectangleData]
+    @Binding var rectangles: [CircleData]
     
     var body: some View {
         ZStack { //another SwiftUI container view that arranges its child views in a back-to-front stack
             ForEach(rectangles, id: \.self.id) { rectangle in //iterate over the rectangles array and create a view for each RectangleData element. The id parameter is set to \.self.id, ensuring that each rectangle is uniquely identifiable.
-                Rectangle()
+                Circle()
                     .frame(width: rectangle.width, height: rectangle.height)
                     .position(x: rectangle.x, y: rectangle.y)
                     .foregroundColor(rectangle.color)
@@ -52,7 +53,7 @@ struct ImageGeneratorView: View {
     }
 }
 
-struct RectangleData: Identifiable, Hashable {
+struct CircleData: Identifiable, Hashable {
     var id = UUID()
     var x: CGFloat
     var y: CGFloat
