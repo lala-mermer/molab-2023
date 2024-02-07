@@ -1,5 +1,5 @@
 //
-//  SettingsRecreation.swift
+//  Recordings.swift
 //  NavigationApp
 //
 //  Created by Mer Owens on 01/24/24.
@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct SettingsRecreation: View {
+struct Recordings: View {
     
     @EnvironmentObject var audioRecorder: AudioRecorder
 
@@ -47,9 +47,9 @@ struct SettingsRecreation: View {
 }
 
 
-struct SettingsRecreation_Previews: PreviewProvider {
+struct Recordings_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Recordings()
             .environmentObject(AudioRecorder())
     }
 }

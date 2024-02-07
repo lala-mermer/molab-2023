@@ -23,7 +23,7 @@
 		C960C21A2AD7497E00372724 /* NavigationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960C2192AD7497E00372724 /* NavigationAppUITests.swift */; };
 		C960C2282AD74EA800372724 /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960C2272AD74EA800372724 /* AboutMe.swift */; };
 		C960C22A2AD751EF00372724 /* MyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960C2292AD751EF00372724 /* MyFriends.swift */; };
-		C960C22C2AD7599A00372724 /* SettingsRecreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960C22B2AD7599A00372724 /* SettingsRecreation.swift */; };
+		C960C22C2AD7599A00372724 /* Recordings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C960C22B2AD7599A00372724 /* Recordings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,7 @@
 		C960C21B2AD7497E00372724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C960C2272AD74EA800372724 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
 		C960C2292AD751EF00372724 /* MyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriends.swift; sourceTree = "<group>"; };
-		C960C22B2AD7599A00372724 /* SettingsRecreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRecreation.swift; sourceTree = "<group>"; };
+		C960C22B2AD7599A00372724 /* Recordings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recordings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 				C960C1FB2AD7497C00372724 /* ContentView.swift */,
 				C960C2272AD74EA800372724 /* AboutMe.swift */,
 				C960C2292AD751EF00372724 /* MyFriends.swift */,
-				C960C22B2AD7599A00372724 /* SettingsRecreation.swift */,
+				C960C22B2AD7599A00372724 /* Recordings.swift */,
 				75EDEA9E2B706F7300006D92 /* RecordingList.swift */,
 				75EDEA942B7068BF00006D92 /* AudioRecorder.swift */,
 				75EDEA962B7068E800006D92 /* AudioPlayer.swift */,
@@ -296,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75EDEA9D2B70694900006D92 /* Helper.swift in Sources */,
-				C960C22C2AD7599A00372724 /* SettingsRecreation.swift in Sources */,
+				C960C22C2AD7599A00372724 /* Recordings.swift in Sources */,
 				75EDEA952B7068BF00006D92 /* AudioRecorder.swift in Sources */,
 				C960C1F82AD7497C00372724 /* AppDelegate.swift in Sources */,
 				75EDEA992B70691400006D92 /* RecordingDataModel.swift in Sources */,
@@ -477,8 +477,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NavigationApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JF8BP2HWS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NavigationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,8 +498,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NavigationApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JF8BP2HWS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NavigationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
