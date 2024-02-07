@@ -12,18 +12,13 @@ struct ContentView: View {
     NavigationView {
         List {
             NavigationLink(destination: AboutMe()) {
-                Text("About Me")
+                Text("About Mona")
             }
-            NavigationLink(destination: Projects()) {
-                Text("My Projects")
-            }
-            NavigationLink(destination: SettingsRecreation()) {
-                Text("Settings Recreation")
+            NavigationLink(destination: MyFriends()) {
+                Text("Mona's Friends")
             }
         }
-//    .navigationBarTitle("Drew's App")
-
-      .navigationBarTitle("Mona's Profile", displayMode: .inline)
+        .navigationBarTitle("Mona's Profile", displayMode: .inline)
     }
   }
 }
