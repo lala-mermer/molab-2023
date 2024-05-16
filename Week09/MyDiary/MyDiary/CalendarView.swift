@@ -8,7 +8,7 @@ import SwiftUI
 
 struct CalendarView: View {
     @EnvironmentObject var diaryViewModel: DiaryViewModel
-    @State private var selectedDate: Date = Date()
+    @Binding var selectedDate: Date
 
     var body: some View {
         VStack {
@@ -28,22 +28,6 @@ struct CalendarView: View {
                             }
                         }
                 }
-            }
-
-            HStack {
-                Button(action: {
-                    // Show text entry view
-                }) {
-                    Text("Add Text")
-                }
-                .padding()
-
-                Button(action: {
-                    // Show image entry view
-                }) {
-                    Text("Add Image")
-                }
-                .padding()
             }
         }
     }

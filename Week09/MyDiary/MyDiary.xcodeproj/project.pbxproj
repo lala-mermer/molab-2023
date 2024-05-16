@@ -15,6 +15,7 @@
 		7541C75B2BF65A2600A6E339 /* TextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C75A2BF65A2600A6E339 /* TextEntryView.swift */; };
 		7541C75D2BF65B1E00A6E339 /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C75C2BF65B1E00A6E339 /* DiaryViewModel.swift */; };
 		7541C75F2BF65B4C00A6E339 /* ImageEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C75E2BF65B4C00A6E339 /* ImageEntryView.swift */; };
+		7541C7632BF65E2800A6E339 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C7622BF65E2800A6E339 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7541C75A2BF65A2600A6E339 /* TextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEntryView.swift; sourceTree = "<group>"; };
 		7541C75C2BF65B1E00A6E339 /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
 		7541C75E2BF65B4C00A6E339 /* ImageEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEntryView.swift; sourceTree = "<group>"; };
+		7541C7622BF65E2800A6E339 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				7541C75A2BF65A2600A6E339 /* TextEntryView.swift */,
 				7541C75C2BF65B1E00A6E339 /* DiaryViewModel.swift */,
 				7541C75E2BF65B4C00A6E339 /* ImageEntryView.swift */,
+				7541C7622BF65E2800A6E339 /* ContentView.swift */,
 			);
 			path = MyDiary;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				7541C75F2BF65B4C00A6E339 /* ImageEntryView.swift in Sources */,
 				7541C75D2BF65B1E00A6E339 /* DiaryViewModel.swift in Sources */,
+				7541C7632BF65E2800A6E339 /* ContentView.swift in Sources */,
 				7541C7572BF659ED00A6E339 /* DiaryEntry.swift in Sources */,
 				7541C7592BF659FE00A6E339 /* CalendarView.swift in Sources */,
 				7541C75B2BF65A2600A6E339 /* TextEntryView.swift in Sources */,
