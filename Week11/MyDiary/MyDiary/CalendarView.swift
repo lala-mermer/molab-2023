@@ -51,7 +51,6 @@ struct EntryView: View {
         VStack(alignment: .leading) {
             if let text = entry.text {
                 Text(text)
-                    .foregroundColor(.black) // Ensure text is readable
                     .padding()
             }
             if let image = entry.image {

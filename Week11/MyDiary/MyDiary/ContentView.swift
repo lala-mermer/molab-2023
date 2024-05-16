@@ -21,7 +21,6 @@ struct ContentView: View {
             }
             .background(Color.pastelPink.edgesIgnoringSafeArea(.all))
             .navigationTitle("MyDiary")
-            .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: HStack {
                 Button(action: {
                     isTextEntryPresented = true
