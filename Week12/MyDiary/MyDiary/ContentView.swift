@@ -18,11 +18,9 @@ struct ContentView: View {
             VStack {
                 CalendarView(selectedDate: $selectedDate)
                 Spacer()
-                DiaryEntriesView(selectedDate: $selectedDate)
             }
             .background(Color.pastelPink.edgesIgnoringSafeArea(.all))
             .navigationTitle("MyDiary")
-            .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: HStack {
                 Button(action: {
                     isTextEntryPresented = true
@@ -49,7 +47,7 @@ struct ContentView: View {
                     .environmentObject(diaryViewModel)
             }
         }
-        .accentColor(.pastelPurple)
+        .accentColor(.pastelPurple) // Change the navigation accent color
     }
 }
 
