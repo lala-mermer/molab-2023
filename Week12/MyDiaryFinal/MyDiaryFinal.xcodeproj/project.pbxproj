@@ -7,34 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7541C7492BF659C900A6E339 /* MyDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C7482BF659C900A6E339 /* MyDiaryApp.swift */; };
-		7541C74D2BF659CA00A6E339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7541C74C2BF659CA00A6E339 /* Assets.xcassets */; };
-		7541C7502BF659CA00A6E339 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7541C74F2BF659CA00A6E339 /* Preview Assets.xcassets */; };
-		7541C7572BF659ED00A6E339 /* DiaryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C7562BF659ED00A6E339 /* DiaryEntry.swift */; };
-		7541C7592BF659FE00A6E339 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C7582BF659FE00A6E339 /* CalendarView.swift */; };
-		7541C75B2BF65A2600A6E339 /* TextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C75A2BF65A2600A6E339 /* TextEntryView.swift */; };
-		7541C75D2BF65B1E00A6E339 /* DiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C75C2BF65B1E00A6E339 /* DiaryViewModel.swift */; };
-		7541C75F2BF65B4C00A6E339 /* ImageEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C75E2BF65B4C00A6E339 /* ImageEntryView.swift */; };
-		7541C7632BF65E2800A6E339 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7541C7622BF65E2800A6E339 /* ContentView.swift */; };
-		7556B3DA2BF664CA00104049 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7556B3D92BF664CA00104049 /* Color.swift */; };
+		755605B62BFDC28100E85F3B /* AddEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755605B52BFDC28100E85F3B /* AddEntryView.swift */; };
+		755605B82BFDC73200E85F3B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755605B72BFDC73200E85F3B /* LoadingView.swift */; };
+		75C78DDD2BFDAF5500569D39 /* MyDiaryFinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DDC2BFDAF5500569D39 /* MyDiaryFinalApp.swift */; };
+		75C78DDF2BFDAF5500569D39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DDE2BFDAF5500569D39 /* ContentView.swift */; };
+		75C78DE12BFDAF5600569D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C78DE02BFDAF5600569D39 /* Assets.xcassets */; };
+		75C78DE42BFDAF5600569D39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C78DE32BFDAF5600569D39 /* Preview Assets.xcassets */; };
+		75C78DEB2BFDAF6300569D39 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DEA2BFDAF6300569D39 /* JournalEntry.swift */; };
+		75C78DEF2BFDAF9000569D39 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DEE2BFDAF9000569D39 /* EntryView.swift */; };
+		75C78DF12BFDB1FC00569D39 /* JournalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DF02BFDB1FC00569D39 /* JournalStore.swift */; };
+		75C78DF32BFDB21200569D39 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DF22BFDB21200569D39 /* CalendarView.swift */; };
+		75C78DF52BFDB23000569D39 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DF42BFDB23000569D39 /* ImagePicker.swift */; };
+		75C78DF72BFDB80A00569D39 /* JournalEntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C78DF62BFDB80A00569D39 /* JournalEntriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7541C7452BF659C900A6E339 /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7541C7482BF659C900A6E339 /* MyDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryApp.swift; sourceTree = "<group>"; };
-		7541C74C2BF659CA00A6E339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7541C74F2BF659CA00A6E339 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7541C7562BF659ED00A6E339 /* DiaryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryEntry.swift; sourceTree = "<group>"; };
-		7541C7582BF659FE00A6E339 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		7541C75A2BF65A2600A6E339 /* TextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEntryView.swift; sourceTree = "<group>"; };
-		7541C75C2BF65B1E00A6E339 /* DiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewModel.swift; sourceTree = "<group>"; };
-		7541C75E2BF65B4C00A6E339 /* ImageEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEntryView.swift; sourceTree = "<group>"; };
-		7541C7622BF65E2800A6E339 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7556B3D92BF664CA00104049 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		755605B52BFDC28100E85F3B /* AddEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryView.swift; sourceTree = "<group>"; };
+		755605B72BFDC73200E85F3B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		75C78DD92BFDAF5500569D39 /* MyDiaryFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiaryFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C78DDC2BFDAF5500569D39 /* MyDiaryFinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDiaryFinalApp.swift; sourceTree = "<group>"; };
+		75C78DDE2BFDAF5500569D39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75C78DE02BFDAF5600569D39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75C78DE32BFDAF5600569D39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75C78DEA2BFDAF6300569D39 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		75C78DEE2BFDAF9000569D39 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		75C78DF02BFDB1FC00569D39 /* JournalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalStore.swift; sourceTree = "<group>"; };
+		75C78DF22BFDB21200569D39 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		75C78DF42BFDB23000569D39 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		75C78DF62BFDB80A00569D39 /* JournalEntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7541C7422BF659C900A6E339 /* Frameworks */ = {
+		75C78DD62BFDAF5500569D39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,43 +48,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7541C73C2BF659C900A6E339 = {
+		75C78DD02BFDAF5500569D39 = {
 			isa = PBXGroup;
 			children = (
-				7541C7472BF659C900A6E339 /* MyDiary */,
-				7541C7462BF659C900A6E339 /* Products */,
+				75C78DDB2BFDAF5500569D39 /* MyDiaryFinal */,
+				75C78DDA2BFDAF5500569D39 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7541C7462BF659C900A6E339 /* Products */ = {
+		75C78DDA2BFDAF5500569D39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7541C7452BF659C900A6E339 /* MyDiary.app */,
+				75C78DD92BFDAF5500569D39 /* MyDiaryFinal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7541C7472BF659C900A6E339 /* MyDiary */ = {
+		75C78DDB2BFDAF5500569D39 /* MyDiaryFinal */ = {
 			isa = PBXGroup;
 			children = (
-				7541C7482BF659C900A6E339 /* MyDiaryApp.swift */,
-				7541C74C2BF659CA00A6E339 /* Assets.xcassets */,
-				7541C74E2BF659CA00A6E339 /* Preview Content */,
-				7541C7562BF659ED00A6E339 /* DiaryEntry.swift */,
-				7541C7582BF659FE00A6E339 /* CalendarView.swift */,
-				7541C75A2BF65A2600A6E339 /* TextEntryView.swift */,
-				7541C75C2BF65B1E00A6E339 /* DiaryViewModel.swift */,
-				7541C75E2BF65B4C00A6E339 /* ImageEntryView.swift */,
-				7541C7622BF65E2800A6E339 /* ContentView.swift */,
-				7556B3D92BF664CA00104049 /* Color.swift */,
+				75C78DDC2BFDAF5500569D39 /* MyDiaryFinalApp.swift */,
+				75C78DDE2BFDAF5500569D39 /* ContentView.swift */,
+				755605B72BFDC73200E85F3B /* LoadingView.swift */,
+				75C78DF42BFDB23000569D39 /* ImagePicker.swift */,
+				75C78DEA2BFDAF6300569D39 /* JournalEntry.swift */,
+				75C78DF62BFDB80A00569D39 /* JournalEntriesView.swift */,
+				75C78DF02BFDB1FC00569D39 /* JournalStore.swift */,
+				755605B52BFDC28100E85F3B /* AddEntryView.swift */,
+				75C78DEE2BFDAF9000569D39 /* EntryView.swift */,
+				75C78DF22BFDB21200569D39 /* CalendarView.swift */,
+				75C78DE02BFDAF5600569D39 /* Assets.xcassets */,
+				75C78DE22BFDAF5600569D39 /* Preview Content */,
 			);
-			path = MyDiary;
+			path = MyDiaryFinal;
 			sourceTree = "<group>";
 		};
-		7541C74E2BF659CA00A6E339 /* Preview Content */ = {
+		75C78DE22BFDAF5600569D39 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7541C74F2BF659CA00A6E339 /* Preview Assets.xcassets */,
+				75C78DE32BFDAF5600569D39 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -88,39 +94,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7541C7442BF659C900A6E339 /* MyDiary */ = {
+		75C78DD82BFDAF5500569D39 /* MyDiaryFinal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7541C7532BF659CA00A6E339 /* Build configuration list for PBXNativeTarget "MyDiary" */;
+			buildConfigurationList = 75C78DE72BFDAF5600569D39 /* Build configuration list for PBXNativeTarget "MyDiaryFinal" */;
 			buildPhases = (
-				7541C7412BF659C900A6E339 /* Sources */,
-				7541C7422BF659C900A6E339 /* Frameworks */,
-				7541C7432BF659C900A6E339 /* Resources */,
+				75C78DD52BFDAF5500569D39 /* Sources */,
+				75C78DD62BFDAF5500569D39 /* Frameworks */,
+				75C78DD72BFDAF5500569D39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyDiary;
-			productName = MyDiary;
-			productReference = 7541C7452BF659C900A6E339 /* MyDiary.app */;
+			name = MyDiaryFinal;
+			productName = MyDiaryFinal;
+			productReference = 75C78DD92BFDAF5500569D39 /* MyDiaryFinal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7541C73D2BF659C900A6E339 /* Project object */ = {
+		75C78DD12BFDAF5500569D39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					7541C7442BF659C900A6E339 = {
+					75C78DD82BFDAF5500569D39 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 7541C7402BF659C900A6E339 /* Build configuration list for PBXProject "MyDiary" */;
+			buildConfigurationList = 75C78DD42BFDAF5500569D39 /* Build configuration list for PBXProject "MyDiaryFinal" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,48 +134,50 @@
 				en,
 				Base,
 			);
-			mainGroup = 7541C73C2BF659C900A6E339;
-			productRefGroup = 7541C7462BF659C900A6E339 /* Products */;
+			mainGroup = 75C78DD02BFDAF5500569D39;
+			productRefGroup = 75C78DDA2BFDAF5500569D39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7541C7442BF659C900A6E339 /* MyDiary */,
+				75C78DD82BFDAF5500569D39 /* MyDiaryFinal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7541C7432BF659C900A6E339 /* Resources */ = {
+		75C78DD72BFDAF5500569D39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7541C7502BF659CA00A6E339 /* Preview Assets.xcassets in Resources */,
-				7541C74D2BF659CA00A6E339 /* Assets.xcassets in Resources */,
+				75C78DE42BFDAF5600569D39 /* Preview Assets.xcassets in Resources */,
+				75C78DE12BFDAF5600569D39 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7541C7412BF659C900A6E339 /* Sources */ = {
+		75C78DD52BFDAF5500569D39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7541C75F2BF65B4C00A6E339 /* ImageEntryView.swift in Sources */,
-				7541C75D2BF65B1E00A6E339 /* DiaryViewModel.swift in Sources */,
-				7541C7632BF65E2800A6E339 /* ContentView.swift in Sources */,
-				7541C7572BF659ED00A6E339 /* DiaryEntry.swift in Sources */,
-				7541C7592BF659FE00A6E339 /* CalendarView.swift in Sources */,
-				7556B3DA2BF664CA00104049 /* Color.swift in Sources */,
-				7541C75B2BF65A2600A6E339 /* TextEntryView.swift in Sources */,
-				7541C7492BF659C900A6E339 /* MyDiaryApp.swift in Sources */,
+				75C78DEB2BFDAF6300569D39 /* JournalEntry.swift in Sources */,
+				75C78DF32BFDB21200569D39 /* CalendarView.swift in Sources */,
+				75C78DEF2BFDAF9000569D39 /* EntryView.swift in Sources */,
+				755605B82BFDC73200E85F3B /* LoadingView.swift in Sources */,
+				75C78DF72BFDB80A00569D39 /* JournalEntriesView.swift in Sources */,
+				75C78DDF2BFDAF5500569D39 /* ContentView.swift in Sources */,
+				75C78DF52BFDB23000569D39 /* ImagePicker.swift in Sources */,
+				755605B62BFDC28100E85F3B /* AddEntryView.swift in Sources */,
+				75C78DDD2BFDAF5500569D39 /* MyDiaryFinalApp.swift in Sources */,
+				75C78DF12BFDB1FC00569D39 /* JournalStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7541C7512BF659CA00A6E339 /* Debug */ = {
+		75C78DE52BFDAF5600569D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +240,7 @@
 			};
 			name = Debug;
 		};
-		7541C7522BF659CA00A6E339 /* Release */ = {
+		75C78DE62BFDAF5600569D39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,14 +296,14 @@
 			};
 			name = Release;
 		};
-		7541C7542BF659CA00A6E339 /* Debug */ = {
+		75C78DE82BFDAF5600569D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyDiary/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MyDiaryFinal/Preview Content\"";
 				DEVELOPMENT_TEAM = 3JF8BP2HWS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lalamermer.MyDiary;
+				PRODUCT_BUNDLE_IDENTIFIER = lalamermer.MyDiaryFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,14 +325,14 @@
 			};
 			name = Debug;
 		};
-		7541C7552BF659CA00A6E339 /* Release */ = {
+		75C78DE92BFDAF5600569D39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MyDiary/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MyDiaryFinal/Preview Content\"";
 				DEVELOPMENT_TEAM = 3JF8BP2HWS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -338,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lalamermer.MyDiary;
+				PRODUCT_BUNDLE_IDENTIFIER = lalamermer.MyDiaryFinal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,25 +357,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7541C7402BF659C900A6E339 /* Build configuration list for PBXProject "MyDiary" */ = {
+		75C78DD42BFDAF5500569D39 /* Build configuration list for PBXProject "MyDiaryFinal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7541C7512BF659CA00A6E339 /* Debug */,
-				7541C7522BF659CA00A6E339 /* Release */,
+				75C78DE52BFDAF5600569D39 /* Debug */,
+				75C78DE62BFDAF5600569D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7541C7532BF659CA00A6E339 /* Build configuration list for PBXNativeTarget "MyDiary" */ = {
+		75C78DE72BFDAF5600569D39 /* Build configuration list for PBXNativeTarget "MyDiaryFinal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7541C7542BF659CA00A6E339 /* Debug */,
-				7541C7552BF659CA00A6E339 /* Release */,
+				75C78DE82BFDAF5600569D39 /* Debug */,
+				75C78DE92BFDAF5600569D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7541C73D2BF659C900A6E339 /* Project object */;
+	rootObject = 75C78DD12BFDAF5500569D39 /* Project object */;
 }
